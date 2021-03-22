@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DA6CA01-DEE6-4F2D-A7A8-991E04E56169}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>XtremeBrowser.My.MyApplication</StartupObject>
+    <RootNamespace>XtremeBrowser</RootNamespace>
+    <AssemblyName>XtremeBrowser</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>XtremeBrowser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>XtremeBrowser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WebKit.Interop, Version=533.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WebKitBrowser, Version=0.4.0.0, Culture=neutral, processorArchitecture=x86" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\XPad Controls.Designer.vb">
+      <DependentUpon>XPad Controls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XPad Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XPad Start Page.Designer.vb">
+      <DependentUpon>XPad Start Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XPad Start Page.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Downloads.Designer.vb">
+      <DependentUpon>Downloads.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Downloads.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Leave Message.Designer.vb">
+      <DependentUpon>Leave Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Leave Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lock.Designer.vb">
+      <DependentUpon>Lock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XNotes.Designer.vb">
+      <DependentUpon>XNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XNotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Organise Bookmarks.Designer.vb">
+      <DependentUpon>Organise Bookmarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Organise Bookmarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Preferences.Designer.vb">
+      <DependentUpon>Preferences.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Preferences.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Remove User.Designer.vb">
+      <DependentUpon>Remove User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Remove User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Show All History.Designer.vb">
+      <DependentUpon>Show All History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Show All History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Timed Shutdown.Designer.vb">
+      <DependentUpon>Timed Shutdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Timed Shutdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unlock.Designer.vb">
+      <DependentUpon>Unlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User List.Designer.vb">
+      <DependentUpon>User List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User Setup.Designer.vb">
+      <DependentUpon>User Setup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Setup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View Source.Designer.vb">
+      <DependentUpon>View Source.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View Source.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XPad SubForm.Designer.vb">
+      <DependentUpon>XPad SubForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XPad SubForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XPad.Designer.vb">
+      <DependentUpon>XPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XtremeBrowser.Designer.vb">
+      <DependentUpon>XtremeBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XtremeBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Other\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\XPad Controls.resx">
+      <DependentUpon>XPad Controls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XPad Start Page.resx">
+      <DependentUpon>XPad Start Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Downloads.resx">
+      <DependentUpon>Downloads.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Leave Message.resx">
+      <DependentUpon>Leave Message.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lock.resx">
+      <DependentUpon>Lock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XNotes.resx">
+      <DependentUpon>XNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Organise Bookmarks.resx">
+      <DependentUpon>Organise Bookmarks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Preferences.resx">
+      <DependentUpon>Preferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Remove User.resx">
+      <DependentUpon>Remove User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Show All History.resx">
+      <DependentUpon>Show All History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Timed Shutdown.resx">
+      <DependentUpon>Timed Shutdown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unlock.resx">
+      <DependentUpon>Unlock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User List.resx">
+      <DependentUpon>User List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Setup.resx">
+      <DependentUpon>User Setup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View Source.resx">
+      <DependentUpon>View Source.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XPad SubForm.resx">
+      <DependentUpon>XPad SubForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XPad.resx">
+      <DependentUpon>XPad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XtremeBrowser.resx">
+      <DependentUpon>XtremeBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\XNotes_btn.png" />
+    <None Include="Resources\Add_Tab_btn.png" />
+    <None Include="Resources\Bookmark_btn2.png" />
+    <None Include="Resources\Cut_btn.png" />
+    <None Include="Resources\Shutdown_Timer_btn.png" />
+    <None Include="Resources\Cmd_btn.png" />
+    <None Include="Resources\Delete_btn.png" />
+    <None Include="Resources\Shutdown_Timer_Cancel_btn.png" />
+    <None Include="Resources\View_Source_btn2.png" />
+    <None Include="Resources\Stop_btn2.png" />
+    <None Include="Resources\Refresh_btn2.png" />
+    <None Include="Resources\New_Window_btn2.png" />
+    <None Include="Resources\Minimize_Tray_btn2.png" />
+    <None Include="Resources\Lock_btn2.png" />
+    <None Include="Resources\Home_btn2.png" />
+    <None Include="Resources\Forward_btn2.png" />
+    <None Include="Resources\Back_btn2.png" />
+    <None Include="Resources\Search_btn.png" />
+    <None Include="Resources\Minimize_To_Tray_btn.png" />
+    <None Include="Resources\View_Source_btn.png" />
+    <None Include="Resources\Home_btn.png" />
+    <None Include="Resources\Bookmarks_btn.png" />
+    <None Include="Resources\New_Window_btn.png" />
+    <None Include="Resources\Stop_btn.png" />
+    <None Include="Resources\Lock_btn.png" />
+    <None Include="Resources\Forward_btn.png" />
+    <None Include="Resources\Back_btn.png" />
+    <None Include="Resources\Refresh_btn.png" />
+    <None Include="Resources\XPad_Icon.ico" />
+    <None Include="Resources\XPad_Logo.png" />
+    <None Include="Resources\Bookmark_Icon.ico" />
+    <None Include="Resources\View_Source_Icon.ico" />
+    <None Include="Resources\Animus_Mix.gif" />
+    <None Include="Resources\Add_User_Icon.ico" />
+    <None Include="Resources\XCalc_btn.png" />
+    <None Include="Resources\World_Icon.ico" />
+    <None Include="Resources\User_List_Icon.ico" />
+    <None Include="Resources\Unlock_Icon.ico" />
+    <None Include="Resources\Unlock_btn.png" />
+    <None Include="Resources\Underline_btn.png" />
+    <None Include="Resources\trentacinque.gif" />
+    <None Include="Resources\Threaded_Dark_One.gif" />
+    <None Include="Resources\Save_btn.png" />
+    <None Include="Resources\Remove_User_Icon.ico" />
+    <None Include="Resources\Remove_Tab_btn.png" />
+    <None Include="Resources\Pattern_156.gif" />
+    <None Include="Resources\Pattern_52.gif" />
+    <None Include="Resources\Pattern_42.png" />
+    <None Include="Resources\Pattern_41.gif" />
+    <None Include="Resources\Pattern_09.gif" />
+    <None Include="Resources\Paste_btn.png" />
+    <None Include="Resources\Page_Search_btn.png" />
+    <None Include="Resources\Page_Save_btn.png" />
+    <None Include="Resources\Message_btn.png" />
+    <None Include="Resources\Luxury_Lining.gif" />
+    <None Include="Resources\Logout_btn.png" />
+    <None Include="Resources\Login_Icon.ico" />
+    <None Include="Resources\Lock_Icon.ico" />
+    <None Include="Resources\Leave_Message_Icon.ico" />
+    <None Include="Resources\Italic_btn.png" />
+    <None Include="Resources\Icon.ico" />
+    <None Include="Resources\Horton.gif" />
+    <None Include="Resources\Green_Chequered.gif" />
+    <None Include="Resources\Globe Logo.ico" />
+    <None Include="Resources\Font_btn.png" />
+    <None Include="Resources\Exit_btn.png" />
+    <None Include="Resources\Dark_Forest.gif" />
+    <None Include="Resources\Copy_btn.png" />
+    <None Include="Resources\Cancel_btn.png" />
+    <None Include="Resources\Bookmark_Add_btn.png" />
+    <None Include="Resources\Bones_Leather.gif" />
+    <None Include="Resources\Bold_btn.png" />
+    <None Include="Resources\Globe_Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
